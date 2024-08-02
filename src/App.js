@@ -20,7 +20,7 @@ function App() {
       setError('');
 
       // Call the REST API
-      const res = await axios.post('http://localhost:5000/bfhl', parsedData);
+      const res = await axios.post('https://bfhl-app-m4db.onrender.com/bfhl', parsedData);
       setResponse(res.data);
     } catch (err) {
       setError('Failed to parse JSON or request error.');
